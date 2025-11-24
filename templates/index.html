@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Bienvenido a mi aplicación</h1>
+    <p style="text-align:center">Selecciona un ejercicio:</p>
+
+    <div class="index-container">
+         <a href="{{ url_for('ejercicio1') }}" class="index-btn btn1">Ejercicio 1</a>
+         <a href="{{ url_for('ejercicio2') }}" class="index-btn btn2">Ejercicio 2</a>
+    </div>
+
+</div>
+
+
+{% endblock %}
